@@ -1,3 +1,4 @@
+## Normas de Gestion Tecnologica NTC 5800 5801 5802
 ### Integrantes:
 - Oscar Ivan Torres Pinto - 20152020044
 
