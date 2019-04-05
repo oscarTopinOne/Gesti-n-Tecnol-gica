@@ -10,4 +10,4 @@
 
 - Yohan Arles Almonacid Ortiz - 20152020916 
 
-- Brian Alfonso Rodriguez - 
+- Brian Alfonso Rodriguez - 20151020600
