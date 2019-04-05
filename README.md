@@ -1,2 +1,2 @@
-# Gesti-n-Tecnol-gica
+# Gestion-Tecnologica
 Repositorio de la asignatura Gestión Tecnológica
