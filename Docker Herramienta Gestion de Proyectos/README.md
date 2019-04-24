@@ -40,6 +40,33 @@ Redmine está escrito utilizando el Framework Ruby on Rails y publicado como sof
 ```sh
 INSTRUCCIÓN DE USO:
 
+Para crear la red: docker network create — driver bridge redmine_network
+
+Para crear los volumenes: docker volume create postgres-data
+                          docker volume create redmine-data
+
+Para iniciar la Base de Datos:  
+      docker container run -d                         \ 
+      --name postgres                           \ 
+      --network redmine_network                 \ 
+      -v postgres-data:/var/lib/postgresql/data \ 
+      --restart always                          \ 
+      -e POSTGRES_PASSWORD='password'             \ 
+      -e POSTGRES_DB='redmine'                  \ 
+      postgres:lates
+
+Para iniciar el Redmine:
+      docker container run -d                         \ 
+      --name redmine                              \ 
+      --network redmine_network                   \ 
+      -p 80:3000                                  \ 
+      --restart always                            \ 
+      -v redmine_data:/usr/src/redmine/files      \ 
+      -e REDMINE_DB_POSTGRES='postgres'           \ 
+      -e REDMINE_DB_DATABASE='redmine'            \ 
+      -e REDMINE_DB_PASSWORD='password'           \ 
+      redmine:latest
+
 Descargar el archivo docker-compose.yml
 
 Abrir ubicación del archivo en la consola de comandos de docker.
