@@ -44,6 +44,6 @@ Descargar el archivo docker-compose.yml
 
 Abrir ubicación del archivo en la consola de comandos de docker.
 
-Ejecutar el comando: docker-compose up -d
+Ejecutar el comando: docker-compose up
 ```
 
