@@ -9,6 +9,7 @@
 
 ### REDMINE
 ![logoredmine](https://user-images.githubusercontent.com/30842893/56640373-780f9680-6638-11e9-9573-ef5daad313c2.png)
+
 Redmine es una herramienta para la gestión de proyectos y seguimiento de incidencias de código abierto basado en la web. Permite a sus usuarios gestionar múltiples proyectos y sus respectivos subproyectos. Para cada proyecto proporciona herramientas muy útiles como wikis y foros, seguimiento temporal y control de acceso flexible basado en roles.
 
 Redmine, además, ofrece funcionalidades clásicas en la gestión de proyectos como calendario de actividades o diagramas de Gantt, lo que nos permite un seguimiento visual cómodo de las líneas de trabajo.
