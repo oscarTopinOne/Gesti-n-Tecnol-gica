@@ -1,4 +1,4 @@
-## Analisis del PETIC_UD
+## Analisis de PETIC_UD
 ### Integrantes:
 - Oscar Ivan Torres Pinto - 20152020044
 
