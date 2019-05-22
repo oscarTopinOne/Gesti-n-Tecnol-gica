@@ -59,9 +59,11 @@ Usar la herramienta.
 - Agregamos un caso de prueba dandole click al simbolo de interrogación (?)
 ![paso2](https://user-images.githubusercontent.com/30842893/58142667-a4094200-7c0d-11e9-8e23-d4c013bc3ee0.png)
 4. PASO 4
+- Se le asigna al nombre del caso de prueba (Prueba Division), y se agrega el script con las pruebas correspondientes.
 ![paso3](https://user-images.githubusercontent.com/30842893/58142695-c26f3d80-7c0d-11e9-8c87-96231dd6be46.png)
 5. PASO 5
-Este es el paso 5
+- Se evidencia los casos de prueba, para posteriormente realizar las pruebas.
 ![paso4](https://user-images.githubusercontent.com/30842893/58142730-d450e080-7c0d-11e9-8198-f00004d294ed.png)
 6. PASO 6
+- Se muestran las pruebas realizadas correctamente de todos los casos de prueba mencionados anteriormente.
 ![paso5](https://user-images.githubusercontent.com/30842893/58142748-eb8fce00-7c0d-11e9-8d2e-ed2848153ecb.png)
