@@ -69,7 +69,7 @@ Usar la herramienta.
 ![paso5](https://user-images.githubusercontent.com/30842893/58142748-eb8fce00-7c0d-11e9-8d2e-ed2848153ecb.png)
 
 ### Referencias 
-[1]. https://qanewsblog.com/2014/05/22/framework-de-pruebas-fitnesse/
-[2]. https://www.softwaretestingclass.com/getting-started-with-first-fitnesse-project/
-[3]. http://fitnesse.org/FitNesseFeatures
-[4]. https://www.youtube.com/watch?v=KQa3kJIyOS8&t=6s
+[1]. https://qanewsblog.com/2014/05/22/framework-de-pruebas-fitnesse/ <br />
+[2]. https://www.softwaretestingclass.com/getting-started-with-first-fitnesse-project/<br />
+[3]. http://fitnesse.org/FitNesseFeatures <br />
+[4]. https://www.youtube.com/watch?v=KQa3kJIyOS8&t=6s <br />
