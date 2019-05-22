@@ -50,13 +50,17 @@ Usar la herramienta.
 ```
 #### Ejemplo Aplicado
 1. PASO 1
-![paso1](https://user-images.githubusercontent.com/30842893/58142569-3e1cba80-7c0d-11e9-9016-e017f51a6ee8.png)
+Ya iniciado el Fitnesse, se da click a editar para cambiar la pantalla de inicio e iniciar la prueba.
+![paso0](https://user-images.githubusercontent.com/30842893/58142960-b20b9280-7c0e-11e9-8477-170d556c6c82.png)
 2. PASO 2
-![paso2](https://user-images.githubusercontent.com/30842893/58142667-a4094200-7c0d-11e9-8e23-d4c013bc3ee0.png)
+Se edita de la siguiente forma y se guarda.
+![paso1](https://user-images.githubusercontent.com/30842893/58142569-3e1cba80-7c0d-11e9-9016-e017f51a6ee8.png)
 3. PASO 3
-![paso3](https://user-images.githubusercontent.com/30842893/58142695-c26f3d80-7c0d-11e9-8c87-96231dd6be46.png)
+![paso2](https://user-images.githubusercontent.com/30842893/58142667-a4094200-7c0d-11e9-8e23-d4c013bc3ee0.png)
 4. PASO 4
-Este es el paso 4
-![paso4](https://user-images.githubusercontent.com/30842893/58142730-d450e080-7c0d-11e9-8198-f00004d294ed.png)
+![paso3](https://user-images.githubusercontent.com/30842893/58142695-c26f3d80-7c0d-11e9-8c87-96231dd6be46.png)
 5. PASO 5
+Este es el paso 5
+![paso4](https://user-images.githubusercontent.com/30842893/58142730-d450e080-7c0d-11e9-8198-f00004d294ed.png)
+6. PASO 6
 ![paso5](https://user-images.githubusercontent.com/30842893/58142748-eb8fce00-7c0d-11e9-8d2e-ed2848153ecb.png)
