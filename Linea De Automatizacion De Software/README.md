@@ -50,12 +50,13 @@ Usar la herramienta.
 ```
 #### Ejemplo Aplicado
 1. PASO 1
-Ya iniciado el Fitnesse, se da click a editar para cambiar la pantalla de inicio e iniciar la prueba.
+- Ya iniciado el Fitnesse, se da click a editar para cambiar la pantalla de inicio e iniciar la prueba.
 ![paso0](https://user-images.githubusercontent.com/30842893/58142960-b20b9280-7c0e-11e9-8477-170d556c6c82.png)
 2. PASO 2
-Se edita de la siguiente forma y se guarda.
+- Se edita de la siguiente forma y se guarda.
 ![paso1](https://user-images.githubusercontent.com/30842893/58142569-3e1cba80-7c0d-11e9-9016-e017f51a6ee8.png)
 3. PASO 3
+- Agregamos un caso de prueba dandole click al simbolo de interrogación (?)
 ![paso2](https://user-images.githubusercontent.com/30842893/58142667-a4094200-7c0d-11e9-8e23-d4c013bc3ee0.png)
 4. PASO 4
 ![paso3](https://user-images.githubusercontent.com/30842893/58142695-c26f3d80-7c0d-11e9-8c87-96231dd6be46.png)
