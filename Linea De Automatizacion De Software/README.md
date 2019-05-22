@@ -8,69 +8,44 @@
 
 
 ### FITNESSE
-![logorfitnesse](https://user-images.githubusercontent.com/30842893/58141410-eb410400-7c08-11e9-90dd-729bc381c8f3.png)
+![logofitnesse](https://user-images.githubusercontent.com/30842893/58141410-eb410400-7c08-11e9-90dd-729bc381c8f3.png)
 
-Redmine es una herramienta para la gestión de proyectos y seguimiento de incidencias de código abierto basado en la web. Permite a sus usuarios gestionar múltiples proyectos y sus respectivos subproyectos. Para cada proyecto proporciona herramientas muy útiles como wikis y foros, seguimiento temporal y control de acceso flexible basado en roles.
+Fitnesse es un IDE que utiliza un servidor Wiki para interactuar con FIT (Framework for Integrated Test).
 
-Redmine, además, ofrece funcionalidades clásicas en la gestión de proyectos como calendario de actividades o diagramas de Gantt, lo que nos permite un seguimiento visual cómodo de las líneas de trabajo.
+FIT es una herramienta open-source diseñada para automatizar pruebas que requiere la colaboración de dos equipos: el equipo funcional (usuarios, perfiles de negocio) y el equipo de desarrollo.
 
-Redmine está escrito utilizando el Framework Ruby on Rails y publicado como software libre bajo la licencia pública general de GNU v2. Su instalación es muy parecida a la instalación de cualquier CMS como WordPress o Joomla.
+El equipo funcional realiza tablas HTML con los casos de negocio que son proporcionadas a FIT, que se encarga de dar colores a la tabla en función del resultado de la prueba. La principal ventaja del uso de Fitnesse como IDE para FIT es la facilidad que ofrece para diseñar y organizar los wikis.
 
-#### Caracteristicas REDMINE
+El equipo de desarrollo se encarga de desarrollar los fixtures que permiten al equipo funcional diseñar las tablas HTML.
 
-- Soporta para múltiples proyectos (con sus respectivos subproyectos).
-- Control de acceso flexible basado en roles.
-- Sistema flexible de seguimiento de incidencias .
-- Diagramas de Gantt y calendario.
-- Gestor de noticias, documentos y archivos.
-- Feeds y notificaciones por correo electrónico.
-- Wiki para cada proyecto.
-- Foro para cada proyecto.
-- Seguimiento de líneas temporales (de trabajo).
-- Campos personalizados para incidencias, entradas temporales, proyectos y usuarios.
-- Integración con los sistemas de control de versiones más utilizados (Subversion, CVS, Git, Mercurial, Bazaar y Darcs).
-- Creación de incidencias vía correo electrónico.
-- Soporte para autentificación LDAP múltiple.
-- Soporte para auto-registro de usuarios.
-- Soporte para 34 idiomas (evidentemente incluye español).
-- Soporte para múltiples sistemas de bases de datos (incluyendo MySQL, PostgreSQL y SQLite).
-- Extensión mediante plugins.
+#### Arquitectura
+
+El servidor Wiki de Fitnesse requiere un segundo componente para poder ejecutar las pruebas. Este componente, no viene incluido en el software fitnesse, y existen varias implementaciones para diferentes lenguajes de programación.
+
+Aunque inicialmente, sólo se podía trabajar con FIT, posteriormente apareció una segunda alternativa, Slim, para establecer la conexión entre los wikis de Fitnesse y el software de pruebas que ejercita el Software Under Test (SUT) a través de los fixtures. Esta segunda alternativa es más ligera y es la que ha terminado imponiéndose, por lo que se recomienda el uso de implementaciones Slim en lugar de FIT.
+![fitnessearq](https://user-images.githubusercontent.com/30842893/58142150-92269f80-7c0b-11e9-93cb-e04cf615780a.jpg)
+
+### Ventajas
+La principal ventaja de esta herramienta, si la comparamos con otras similares como Junit, es que permite que perfiles funcionales o de negocio puedan definir y modificar fácilmente casos de Test sin necesidad de tener conocimientos de programación.
+
+Esta herramienta se presenta como colaborativa, ya que requerirá la interacción de los encargados de especificar los casos de test o wikis, con los programadores que se encarguen del mantenimiento de los fixtures.
+
+Aunque el propio fitnesse gestiona las versiones de cada Wiki, se puede decidir gestionar el directorio FitNesseRoot en alguna herramienta de control de cambios como SVN. Para ello bastaría con gestionar los ficheros content.txt y properties.xml anteriormente mencionados.
+
+### Desventajas
+Uno de los principales inconvenientes es que no todos los lenguajes de programación están soportados, si bien al tratarse de código libre, cualquier persona es libre de realizar la implementación y extender si lo necesita los tipos de fixtures disponibles.
 
 #### Instrucciones
 ```sh
 INSTRUCCIÓN DE USO:
 
-Para crear la red: docker network create — driver bridge redmine_network
+Para instalar Fitnesse: Ir a la dirección www.fitnesse.org 
+y descargar el .jar
 
-Para crear los volumenes: docker volume create postgres-data
-                          docker volume create redmine-data
+Ejecutar el .jar y usar el siguiente comando:
+java -jar fitnesse-standalone.jar -p 2222
+Nota: El -p sirve para saber que puerto vamos a usar para la herramienta.
 
-Para iniciar la Base de Datos:  
-      docker container run -d                         \ 
-      --name postgres                           \ 
-      --network redmine_network                 \ 
-      -v postgres-data:/var/lib/postgresql/data \ 
-      --restart always                          \ 
-      -e POSTGRES_PASSWORD='password'             \ 
-      -e POSTGRES_DB='redmine'                  \ 
-      postgres:lates
-
-Para iniciar el Redmine:
-      docker container run -d                         \ 
-      --name redmine                              \ 
-      --network redmine_network                   \ 
-      -p 80:3000                                  \ 
-      --restart always                            \ 
-      -v redmine_data:/usr/src/redmine/files      \ 
-      -e REDMINE_DB_POSTGRES='postgres'           \ 
-      -e REDMINE_DB_DATABASE='redmine'            \ 
-      -e REDMINE_DB_PASSWORD='password'           \ 
-      redmine:latest
-
-Descargar el archivo docker-compose.yml
-
-Abrir ubicación del archivo en la consola de comandos de docker.
-
-Ejecutar el comando: docker-compose up
+Usar la herramienta.
 ```
 
