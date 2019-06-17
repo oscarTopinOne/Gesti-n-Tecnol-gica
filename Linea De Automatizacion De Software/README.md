@@ -44,6 +44,7 @@ En docker y dado el Dockerfile usar el comando para construir la imagen:
 docker build -t fitnesse .
 Para correr Fitnesse:
 docker run -dP fitnesse
+Nota: Si no funciona docker run fitnesse
 Usar la herramienta.
 ```
 #### Ejemplo Aplicado
