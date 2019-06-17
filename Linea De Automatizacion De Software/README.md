@@ -39,13 +39,11 @@ Uno de los principales inconvenientes es que no todos los lenguajes de programac
 ```sh
 INSTRUCCIÓN DE USO:
 
-Para instalar Fitnesse: Ir a la dirección www.fitnesse.org 
-y descargar el .jar
-
-Ejecutar el .jar y usar el siguiente comando:
-java -jar fitnesse-standalone.jar -p 2222
-Nota: El -p sirve para saber que puerto vamos a usar para la herramienta.
-
+Para instalar Fitnesse: 
+En docker y dado el Dockerfile usar el comando para construir la imagen:
+docker build -t fitnesse .
+Para correr Fitnesse:
+docker run -dP fitnesse
 Usar la herramienta.
 ```
 #### Ejemplo Aplicado
