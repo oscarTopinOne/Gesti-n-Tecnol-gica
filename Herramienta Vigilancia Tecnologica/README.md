@@ -27,6 +27,7 @@ Además, HONTZA también permite ser instalado en universidades con fines educat
 
 ### Como Funciona HONTZA
 Permite que un Grupo de personas que compartan un Reto estratégico común puedan vigilar en tiempo real su entorno competitivo, pueda colaborar y generar, de modo ágil y sistemático, proyectos de alta calidad, alineados con la estrategia, compatibles con el entorno y priorizados.
+
 ![inteligencia_grafico](https://user-images.githubusercontent.com/30842893/60198195-a9f2d400-9806-11e9-90cc-d371428dfe53.jpg)
 
 Dicho de un modo sencillo, HONTZA ayuda a una organización a generar sistemáticamente proyectos innovadores sin gastar dinero y garantizando el máximo impacto.
